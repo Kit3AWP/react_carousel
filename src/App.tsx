@@ -66,12 +66,12 @@ export const App: React.FC = () => {
           ></input>
         </label>
 
-        <label htmlFor="durationId">
+        <label htmlFor="fnimationDuration">
           Duration:
           <input
             type="number"
             value={duration}
-            id="durationId"
+            id="fnimationDuration"
             onChange={event => setDuration(Number(event.target.value))}
           ></input>
         </label>
