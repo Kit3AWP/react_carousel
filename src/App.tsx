@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.scss';
 import { Carousel } from './components/Carousel';
 
@@ -21,6 +21,10 @@ export const App: React.FC = () => {
   const [step, setStep] = useState(3);
   const [duration, setDuration] = useState(1000);
   const [isInfinite, setIsInfinite] = useState(false);
+
+  useEffect(() => {
+    document.title = 'Carousel';
+  }, []);
 
   return (
     <div className="App">
